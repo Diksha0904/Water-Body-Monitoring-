@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Body Health Monitoring</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Water Body Health Monitoring</h1>
+        <div class="row my-4">
+            <div class="col-md-4">
+                <label for="waterBodySelect">Select Water Body:</label>
+                <select id="waterBodySelect" class="form-control">
+                    <option value="Yamuna River">Yamuna River</option>
+                    <option value="Bhalswa Lake">Bhalswa Lake</option>
+                    <option value="Sanjay Lake">Sanjay Lake</option>
+                    <option value="Najafgarh Lake">Najafgarh Lake</option>
+                    <option value="Hauz Khas Lake">Hauz Khas Lake</option>
+                    <option value="Tughlaqabad Lake">Tughlaqabad Lake</option>
+                    <option value="Sukhdev Vihar Pond">Sukhdev Vihar Pond</option>
+                    <option value="Okhla Bird Sanctuary Lake">Okhla Bird Sanctuary Lake</option>
+                    <option value="Roshanara Bagh Lake">Roshanara Bagh Lake</option>
+                    <option value="Humayun’s Tomb Lake">Humayun’s Tomb Lake</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="yearSelect">Select Year:</label>
+                <select id="yearSelect" class="form-control">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="parameterSelect">Select Parameter:</label>
+                <select id="parameterSelect" class="form-control">
+                    <option value="pH">pH</option>
+                    <option value="Dissolved Oxygen">Dissolved Oxygen</option>
+                    <option value="Turbidity">Turbidity</option>
+                    <option value="Nitrate Levels">Nitrate Levels</option>
+                </select>
+            </div>
+        </div>
+
+         <!-- Graph Container -->
+         <div class="chart-container">
+            <canvas id="waterBodyHealthChart"></canvas> <!-- Chart Canvas -->
+        </div>
+    </div>
+
+        <div class="my-4">
+            <canvas id="waterBodyChart"></canvas>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

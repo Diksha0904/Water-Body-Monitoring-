@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('https://www.example.com/water-body.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.dashboard-highlights {
+    padding: 50px 0;
+}
+
+.highlight-card {
+    background: #eee8e8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
